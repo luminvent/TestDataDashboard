@@ -158,50 +158,6 @@
           }
         }
       }
-    },
-    "@eclipse-edc/dashboard-core": {
-      "projectType": "library",
-      "root": "projects/dashboard-core",
-      "sourceRoot": "projects/dashboard-core/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular/build:ng-packagr",
-          "options": {
-            "project": "projects/dashboard-core/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/dashboard-core/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/dashboard-core/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "karmaConfig": "karma.conf.js",
-            "tsConfig": "projects/dashboard-core/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "projects/dashboard-core/**/*.ts",
-              "projects/dashboard-core/**/*.html"
-            ],
-            "eslintConfig": "projects/dashboard-core/eslint.config.js"
-          }
-        }
-      }
     }
   },
   "cli": {

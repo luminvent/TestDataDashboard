@@ -13,10 +13,12 @@
  */
 
 import { Component, OnInit, inject } from '@angular/core';
-import { DashboardAppComponent, EdcConfig } from '@eclipse-edc/dashboard-core';
+// import { DashboardAppComponent, EdcConfig } from '@luminvent/dashboard-core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
-import { AppConfig } from '../../projects/dashboard-core/src/lib/models/app-config';
+import { AppConfig } from '@luminvent/dashboard-core/src/lib/models/app-config';
+import { EdcConfig } from '@luminvent/dashboard-core/src/lib/models/edc-config';
+import { DashboardAppComponent } from '@luminvent/dashboard-core/src/lib/dashboard-app/dashboard-app.component';
 
 @Component({
   selector: 'app-root',
